@@ -1,47 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
       color: #333;
+      margin: 0;
+      padding: 20px;
     }
 
     h1 {
+      font-size: 3em;
       color: #2c3e50;
       text-align: center;
+      margin-bottom: 40px;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
-    li {
-      margin: 10px 0;
-      font-size: 1.2em;
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
     }
 
-    a {
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card a {
       text-decoration: none;
       color: #3498db;
+      font-size: 1.2em;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 1em;
+      line-height: 1.5;
     }
 
     a:hover {
       text-decoration: underline;
       color: #2980b9;
     }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
+
   <h1>Welcome to My Data Portfolio</h1>
-  <ul>
-    <li><a href="Predict_Stock_Price_Machine_Learning.html"> Machine Learning Model Predict Stock Price</a></li>
-    <li><a href="Kaggle_Competition_report.html">Kaggle Competition Report</a></li>
-    <li><a href="Python_connect_SQL_Relationtional_Database_sample.html"> SQL Sample</a></li>
-    <li><a href="MongoDB_sample.html">MongoDB Sample</a></li>
-    <li><a href="Python_Data_Analysis_sample.html">Python Data Analysis Sample</a></li>
-  </ul>
+
+  <div class="container">
+    <div class="card">
+      <a href="Predict_Stock_Price_Machine_Learning.html">Machine Learning Model Predict Stock Price</a>
+      <p>Stock prediction using advanced machine learning algorithms and historical data to estimate future stock prices.</p>
+    </div>
+
+    <div class="card">
+      <a href="Kaggle_Competition_report.html">Kaggle Competition Report</a>
+      <p>A detailed report on my approach to solving a Kaggle competition problem, including data analysis and model optimization.</p>
+    </div>
+
+    <div class="card">
+      <a href="Python_connect_SQL_Relationtional_Database_sample.html">SQL Sample</a>
+      <p>Connecting to relational databases using SQL and performing advanced queries for data extraction and analysis.</p>
+    </div>
+
+    <div class="card">
+      <a href="MongoDB_sample.html">MongoDB Sample</a>
+      <p>Working with NoSQL databases such as MongoDB to handle large-scale unstructured data efficiently.</p>
+    </div>
+
+    <div class="card">
+      <a href="Python_Data_Analysis_sample.html">Python Data Analysis Sample</a>
+      <p>Using Python libraries such as Pandas and Matplotlib to analyze datasets and visualize insights.</p>
+    </div>
+  </div>
+
 </body>
 </html>
