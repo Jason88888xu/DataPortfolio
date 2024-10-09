@@ -1,102 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 3em;
-      color: #2c3e50;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 300px;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    .card a {
-      text-decoration: none;
-      color: #3498db;
-      font-size: 1.2em;
-      font-weight: bold;
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #666;
-      font-size: 1em;
-      line-height: 1.5;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #2980b9;
-    }
-
-    @media (max-width: 768px) {
-      .card {
-        width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .card p {
+            font-size: 16px;
+            color: #333;
+        }
+        .card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .card a:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Welcome to Jason Xu's Data Portfolio</h1>
+<h1>My Projects</h1>
 
-  <div class="container">
+<div class="container">
+    <!-- Ryder Project Card -->
     <div class="card">
-      <a href="Predict_Stock_Price_Machine_Learning.html">Machine Learning Model Predict Stock Price</a>
-      <p>Stock prediction using Python machine learning algorithms and historical data analysis to estimate future stock prices.</p>
+        <h2>Ryder Project</h2>
+        <p>This project contains the client presentation and project documentation.</p>
+        <a href="#ryder_project_files">View Files</a>
     </div>
 
-    <div class="card">
-      <a href="Kaggle_Competition_report.html">Kaggle Competition Report</a>
-      <p>A detailed report on my approach to solving a Kaggle competition problem, including data analysis and model optimization.</p>
-    </div>
+    <!-- Add more cards here for other projects if needed -->
 
-    <div class="card">
-      <a href="Python_connect_SQL_Relationtional_Database_sample.html">SQL Sample</a>
-      <p>Connecting to relational databases using SQL and performing queries for data extraction and analysis.</p>
-    </div>
+</div>
 
-    <div class="card">
-      <a href="MongoDB_sample.html">MongoDB Sample</a>
-      <p>Working with NoSQL databases such as MongoDB to handle large-scale unstructured data efficiently.</p>
-    </div>
-
-    <div class="card">
-      <a href="Python_Data_Analysis_sample.html">Python Data Analysis Sample</a>
-      <p>Using Python with Flask.</p>
-    </div>
-  </div>
+<!-- Section for Ryder Project Files -->
+<div id="ryder_project_files">
+    <h2>Ryder Project Files</h2>
+    <ul>
+        <li><a href="docs/Ryder_project/Client%20Presentation%20-%20Nov%2030%202023.pdf" target="_blank">Client Presentation - Nov 30 2023</a></li>
+        <li><a href="docs/Ryder_project/developed_code.html" target="_blank">Developed Code</a></li>
+        <li><a href="docs/Ryder_project/project_documentation.docx" target="_blank">Project Documentation</a></li>
+    </ul>
+</div>
 
 </body>
 </html>
